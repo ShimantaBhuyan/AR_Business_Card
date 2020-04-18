@@ -107,7 +107,8 @@
                 </a-entity>                 
 
                 <a-link class="clickable" href="https://www.devkrishna.co" title="" image="" position="140 370 0" rotation="-67.42 0 0" scale="30 30 30" geometry="primitive:circle;segments:64" material="shader:portal;side:double;visible:false" link="title:.">                    
-                    <a-entity geometry="primitive: box" material="src: #headshotTexture" rotation="0 0 0" radius="5" animation="property: rotation; startEvents: mouseenter; loop: true; end: mouseleave; dur: 2000; fill: backwards; easing: linear; to: 0 360 0;">
+                    <a-entity geometry="primitive: box" material="src: #headshotTexture" rotation="0 0 0" radius="5" animation__mouseenter="property: rotation; startEvents: mouseenter; loop: true; dur: 2000; fill: backwards; easing: linear; to: 0 360 0;" 
+                    animation__mouseleave="property: rotation; startEvents: mouseleave; loop: false; dur: 1500; to: 0 0 0;">
                     </a-entity>
                 </a-link>
                 
@@ -116,7 +117,7 @@
             <a-entity camera></a-entity>
             <a-entity cursor="fuse: true; fuseTimeout: 2000" raycaster="objects: .clickable" position="0 0 -1" scale="0.01 0.01 0.01" geometry="primitive: ring" material="color: white; shader: flat" rotation="" visible="" 
             animation="property: scale; startEvents: fusing; easing: easeInQuad; fill: backwards; from: 0.01 0.01 0.01; to: 0.02 0.02 0.02; dur: 3000" 
-            animation__color="property: material.color; startEvents: fusing; easing: easeInQuad; from: white; to: orange; dur: 3000">
+            animation__color="property: components.material.material.color; type: color; startEvents: fusing; easing: easeInQuad; from: white; to: orange; dur: 3000">
             </a-entity>
         </a-scene>
     
