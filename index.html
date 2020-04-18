@@ -60,7 +60,6 @@
                 <a-entity position="-2 .5 -1.4" rotation="-45.98 -4.56 5.28" scale="0.1 .25 .2" 
                     text-geometry="bevelEnabled:true;bevelSize:0.1;bevelThickness:0.1;curveSegments:1;font:https://cdn.glitch.com/c719c986-c0c5-48b8-967c-3cd8b8aa17f3%2Fexo2Black.typeface.json?1490305922150;height:0.5;size:2;value:S H I M A N T A   B H U Y A N" material="color:blue;metalness:0.9;roughness:0.05;sphericalEnvMap:https://cdn.glitch.com/6f8b5a13-fd4d-445d-b9eb-57c735d720ea%2FTextureMap.png?1528781398531">
                 </a-entity> 
-                -->
                 <a-box scale="1 1 1" material="src: #headshotTexture" position = "0 0 0" radius="2" segments-height="84"></a-box> 
                     
                 <a-link class="clickable" href="https://in.linkedin.com/in/shimantabhuyan" title="" image="" position="-1.4 0.0 0.333"  rotation="-67.42 0 0" scale="0.6 0.6 0.6" geometry="primitive:circle;segments:64" material="shader:portal;side:double;visible:false" link="title:.">
@@ -68,7 +67,6 @@
                         <a-animation attribute="rotation" begin="mouseenter" loop="true" end="mouseleave" dur="2000" fill="backwards" to="335 360 360" ease="linear"></a-animation>
                     </a-box>
                 </a-link>
-                <!--
                 <a-link class="clickable" href="tel:+91 9xxxxxxxxx" title="" image="" position="-2 0 -.333" rotation="-67.42 0 0" scale="0.6 0.6 0.6" geometry="primitive:circle;segments:64" material="shader:portal;side:double;visible:false" link="title:.">
                     <a-box scale="0.8 0.8 1.05" material="src:#phoneTexture" position="-0.09854454977856898 -0.0036935886841299587 -0.2155814669584256" radius="2" segments-height="84" rotation="-23.450000000000003 0 0" geometry="">
                         <a-animation attribute="rotation" begin="mouseenter" loop="true" end="mouseleave" dur="2000" fill="backwards" to="335 360 360" ease="linear"></a-animation>
@@ -93,6 +91,12 @@
                     </a-box>
                 </a-link>     
                 -->         
+                <a-entity
+                gltf-model='https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex/scene.gltf'
+                scale="5 5 5"
+                position="50 150 0"
+                    >
+                </a-entity>
             </a-nft>
 
             <a-entity camera="" position="" rotation="" scale="" visible=""></a-entity>
