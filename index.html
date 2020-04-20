@@ -102,7 +102,7 @@
 
                 <a-entity id="stars" particle-system="preset: default; color: #515; particleCount: 30; maxAge: 2; randomize: false; blending: 1; opacity: .5; velocityValue:'50 10 0'" position="140 350 0" rotation="-90 0 0" ></a-entity> 
                 
-                <a-entity geometry="primitive: box" class="clickable" material="src: #headshotTexture" rotation="0 0 0" radius="5" position="140 350 0" scale="40 40 40"
+                <a-entity geometry="primitive: box" class="clickable" material="src: #headshotTexture" rotation="0 0 0" radius="5" position="150 350 0" scale="40 40 40"
                     animation__mouseenter="property: rotation; 
                                         startEvents: mouseenter; 
                                         pauseEvents: mouseleave; 
@@ -136,6 +136,24 @@
                                             dur: 1500; 
                                             to: 0 0 0;"
                     navigate-on-click="url: https://in.linkedin.com/in/shimantabhuyan">
+                </a-entity>
+
+                <a-entity geometry="primitive: box" class="clickable" material="src: #githubTexture" rotation="0 0 0" radius="5" position="40 100 0" scale="40 40 40"
+                    animation__mouseenter="property: rotation; 
+                                            startEvents: mouseenter; 
+                                            pauseEvents: mouseleave; 
+                                            from: 0 0 0; 
+                                            to: 0 360 0; 
+                                            loop: true; 
+                                            dur: 2000; 
+                                            dir: alternate; 
+                                            easing: linear;" 
+                    animation__mouseleave="property: rotation; 
+                                            startEvents: mouseleave; 
+                                            loop: false; 
+                                            dur: 1500; 
+                                            to: 0 0 0;"
+                    navigate-on-click="url: https://github.com/shimantabhuyan/">
                 </a-entity>
                 
             </a-nft>
