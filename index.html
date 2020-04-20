@@ -32,14 +32,29 @@
 
             <a-assets>
                 <img crossorigin="anonymous" id="skypeTexture" src="https://cdn.glitch.com/6f8b5a13-fd4d-445d-b9eb-57c735d720ea%2FPostSkype.png?1528821334003" />
-                <img crossorigin="anonymous" id="phoneTexture" src="https://cdn.glitch.com/6f8b5a13-fd4d-445d-b9eb-57c735d720ea%2FPostPhone.png?1528821333458" />
-                <img crossorigin="anonymous" id="messageTexture" src="https://cdn.glitch.com/6f8b5a13-fd4d-445d-b9eb-57c735d720ea%2FPostMessages.png?1528821333263" />
                 <img crossorigin="anonymous" id="emailTexture" src="https://cdn.glitch.com/6f8b5a13-fd4d-445d-b9eb-57c735d720ea%2FPostEmail.png?1528821333360" />
                 <img crossorigin="anonymous" id="linkedinTexture" src="https://cdn.glitch.com/6f8b5a13-fd4d-445d-b9eb-57c735d720ea%2FPostLinkedin.png?1528821333139" />
                 <img crossorigin="anonymous" id="githubTexture" src="https://cdn.glitch.com/6f8b5a13-fd4d-445d-b9eb-57c735d720ea%2FPostGithub.png?1528821333564" />
-                <img crossorigin="anonymous" id="resumeTexture" src="https://cdn.glitch.com/6f8b5a13-fd4d-445d-b9eb-57c735d720ea%2FPostResume.png?1528821333907" />
-                <img crossorigin="anonymous" id="websiteTexture" src="https://cdn.glitch.com/6f8b5a13-fd4d-445d-b9eb-57c735d720ea%2FPostComputer.png?1528821332969" />
                 <img crossorigin="anonymous" id="headshotTexture" src="/AR_Business_Card/assets/headshot.jpg" />  
+                <a-mixin id="cube" geometry="primitive: box" radius="5" scale="40 40 40" rotation="0 0 0"></a-mixin>
+                <a-mixin id="mouseEnterAnimation" 
+                    animation__mouseenter="property: rotation; 
+                        startEvents: mouseenter; 
+                        pauseEvents: mouseleave; 
+                        from: 0 0 0; 
+                        to: 0 360 0; 
+                        loop: true; 
+                        dur: 2000; 
+                        dir: alternate; 
+                        easing: linear;">
+                </a-mixin>
+                <a-mixin id="mouseLeaveAnimation"
+                    animation__mouseleave="property: rotation; 
+                        startEvents: mouseleave; 
+                        loop: false; 
+                        dur: 1500; 
+                        to: 0 0 0;">
+                </a-mixin>
             </a-assets>
 
             <a-nft
@@ -100,78 +115,16 @@
                 ></a-entity>                
                 -->
 
-                <a-entity id="stars" particle-system="preset: default; color: #515; particleCount: 30; maxAge: 2; randomize: false; blending: 1; opacity: .5; velocityValue:'50 10 0'" position="140 350 0" rotation="-90 0 0" ></a-entity> 
-                
-                <a-entity geometry="primitive: box" class="clickable" material="src: #headshotTexture" rotation="0 0 0" radius="5" position="180 400 0" scale="40 40 40"
-                    animation__mouseenter="property: rotation; 
-                                        startEvents: mouseenter; 
-                                        pauseEvents: mouseleave; 
-                                        from: 0 0 0; 
-                                        to: 0 360 0; 
-                                        loop: true; 
-                                        dur: 2000; 
-                                        dir: alternate; 
-                                        easing: linear;" 
-                    animation__mouseleave="property: rotation; 
-                                        startEvents: mouseleave; 
-                                        loop: false; 
-                                        dur: 1500; 
-                                        to: 0 0 0;"
-                    navigate-on-click="url: https://devkrishna.co">                    
+                <a-entity mixin="cube mouseEnterAnimation mouseLeaveAnimation" class="clickable" material="src: #headshotTexture" position="180 400 0" navigate-on-click="url: https://devkrishna.co">                    
                 </a-entity>
 
-                <a-entity geometry="primitive: box" class="clickable" material="src: #linkedinTexture" rotation="0 0 0" radius="5" position="-50 400 0" scale="40 40 40"
-                    animation__mouseenter="property: rotation; 
-                                            startEvents: mouseenter; 
-                                            pauseEvents: mouseleave; 
-                                            from: 0 0 0; 
-                                            to: 0 360 0; 
-                                            loop: true; 
-                                            dur: 2000; 
-                                            dir: alternate; 
-                                            easing: linear;" 
-                    animation__mouseleave="property: rotation; 
-                                            startEvents: mouseleave; 
-                                            loop: false; 
-                                            dur: 1500; 
-                                            to: 0 0 0;"
-                    navigate-on-click="url: https://in.linkedin.com/in/shimantabhuyan">
+                <a-entity mixin="cube mouseEnterAnimation mouseLeaveAnimation" class="clickable" material="src: #linkedinTexture" position="-50 400 0" navigate-on-click="url: https://in.linkedin.com/in/shimantabhuyan">
                 </a-entity>
 
-                <a-entity geometry="primitive: box" class="clickable" material="src: #githubTexture" rotation="0 0 0" radius="5" position="-50 135 0" scale="40 40 40"
-                    animation__mouseenter="property: rotation; 
-                                            startEvents: mouseenter; 
-                                            pauseEvents: mouseleave; 
-                                            from: 0 0 0; 
-                                            to: 0 360 0; 
-                                            loop: true; 
-                                            dur: 2000; 
-                                            dir: alternate; 
-                                            easing: linear;" 
-                    animation__mouseleave="property: rotation; 
-                                            startEvents: mouseleave; 
-                                            loop: false; 
-                                            dur: 1500; 
-                                            to: 0 0 0;"
-                    navigate-on-click="url: https://github.com/shimantabhuyan/">
+                <a-entity mixin="cube mouseEnterAnimation mouseLeaveAnimation" class="clickable" material="src: #githubTexture" position="-50 135 0" navigate-on-click="url: https://github.com/shimantabhuyan/">
                 </a-entity>                
 
-                <a-entity geometry="primitive: box" class="clickable" material="src: #emailTexture" rotation="0 0 0" radius="5" position="180 135 0" scale="40 40 40"
-                    animation__mouseenter="property: rotation; 
-                                            startEvents: mouseenter; 
-                                            pauseEvents: mouseleave; 
-                                            from: 0 0 0; 
-                                            to: 0 360 0; 
-                                            loop: true; 
-                                            dur: 2000; 
-                                            dir: alternate; 
-                                            easing: linear;" 
-                    animation__mouseleave="property: rotation; 
-                                            startEvents: mouseleave; 
-                                            loop: false; 
-                                            dur: 1500; 
-                                            to: 0 0 0;"
-                    navigate-on-click="url: mailto:shimantakb@gmail.com">
+                <a-entity mixin="cube mouseEnterAnimation mouseLeaveAnimation" class="clickable" material="src: #emailTexture" rotation="0 0 0" position="180 135 0" navigate-on-click="url: mailto:shimantakb@gmail.com">
                 </a-entity>
                 
             </a-nft>
