@@ -3,6 +3,7 @@
 ### Steps to check demo
 1. Print/Open this [image](https://github.com/ShimantaBhuyan/AR_Business_Card/blob/master/assets/markerImage.jpg)
 2. Go to this [site](https://shimantabhuyan.github.io/AR_Business_Card/) and enable camera permissions to run
+3. Point camera to the image and point cursor to the boxes to interact
 
 \* (work in progress)
 
