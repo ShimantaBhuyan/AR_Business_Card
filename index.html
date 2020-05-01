@@ -140,7 +140,11 @@
                 animation__colormouseleave="property: components.material.material.color; isRawProperty: true; type: color; startEvents: mouseleave; easing: easeInQuad; dur: 2000; to: white;">
             </a-entity>
             
-        </a-scene>
+        </a-scene>        
+
+        <div style="width: 100%; height: 100%; position: fixed; left: 0; top: 0; z-index: -1; overflow: hidden">
+            <div id="htmlElement" style="background: #F8F8F8; color: #333; font-size: 48px">Hello, HTML!</div>
+        </div>
     
         <script type="text/javascript">  
             AFRAME.registerComponent('navigate-on-click', {
