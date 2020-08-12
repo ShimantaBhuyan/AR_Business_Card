@@ -39,6 +39,7 @@
                 <img crossorigin="anonymous" id="githubTexture" src="https://cdn.glitch.com/6f8b5a13-fd4d-445d-b9eb-57c735d720ea%2FPostGithub.png?1528821333564" />   
                 <img crossorigin="anonymous" id="headshotTexture" src="/AR_Business_Card/assets/headshot.jpg" />               
                 <img crossorigin="anonymous" id="avevaLogo" src="/AR_Business_Card/assets/AVEVA/AVEVA_Logo_color_RGB.png">
+
                 <a-mixin id="cube" geometry="primitive: box" radius="5" scale="40 40 40" rotation="0 0 0"></a-mixin>
                 <a-mixin id="mouseEnterAnimation" 
                     animation__mouseenter="property: rotation; 
@@ -119,6 +120,8 @@
                 -->
 
                 <!-- <a-entity text="font: https://fonts.googleapis.com/css2?family=Barlow:wght@700&display=swap; value: AVEVA WORLD DIGITAL"  position="90 90 0"></a-entity> -->
+
+                <a-plane src="#avevaLogo" height="200" width="476" rotation="0 0 0"></a-plane>
 
                 <a-entity mixin="cube mouseEnterAnimation mouseLeaveAnimation" class="clickable" material="src: #headshotTexture" position="180 400 0" navigate-on-click="url: https://devkrishna.co">                    
                 </a-entity>
