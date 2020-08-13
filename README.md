@@ -9,4 +9,17 @@
 
 ### View my Business Card in AR
 
+#### TODO
+- [ ] Add form to get business data to be shown and get feature set dynamically
+    1. Get photo of business card/id card
+    2. Get company name
+    3. Get company logo(enhancement)
+    4. Get headshot image
+    5. Get email id
+    6. Get LinkedIn profile link (if any)
+    7. Get portfolio link (if any)
+    8. Get any other profile link 
+- [ ] Get all business data from image of business card with text recognition (enhancement)
+- [ ] Customise positions and ability to add own entities (enhancement)
+
 ##### Inspired from [filmboy3/AugmentedRealityBizCard](https://github.com/filmboy3/AugmentedRealityBizCard)
